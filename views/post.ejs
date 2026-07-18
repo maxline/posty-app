@@ -1,0 +1,14 @@
+<%- include('partials/header', { title: post.title }) %>
+
+<article class="post">
+  <a class="back-link" href="/">&larr; Back to all posts</a>
+  <h1><%= post.title %></h1>
+  <% if (post.date) { %>
+    <p class="post-date"><%= post.date.toDateString() %></p>
+  <% } %>
+  <div class="post-content">
+    <%- post.html %>
+  </div>
+</article>
+
+<%- include('partials/footer') %>

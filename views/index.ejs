@@ -1,0 +1,21 @@
+<%- include('partials/header', { title: 'Markdown Blog' }) %>
+
+<h1>Posts</h1>
+
+<% if (posts.length === 0) { %>
+  <p class="empty">No posts yet. <a href="/posts/new">Write the first one</a>.</p>
+<% } else { %>
+  <ul class="post-list">
+    <% posts.forEach(function(post) { %>
+      <li class="post-list-item">
+        <a class="post-list-title" href="/posts/<%= post.slug %>"><%= post.title %></a>
+        <% if (post.date) { %>
+          <span class="post-date"><%= post.date.toDateString() %></span>
+        <% } %>
+        <p class="post-excerpt"><%= post.excerpt %>&hellip;</p>
+      </li>
+    <% }); %>
+  </ul>
+<% } %>
+
+<%- include('partials/footer') %>
