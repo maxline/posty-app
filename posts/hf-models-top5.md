@@ -1,4 +1,4 @@
-![AI Robot](https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M/resolve/main/assets/qwythos.png)
+![AI Robot](https://mcp-tools-flux-1-krea-dev.hf.space/--replicas/2ds4p/gradio_api/file=/tmp/gradio/80536c1dfd1fc229d3797ed5d47b6934ed51812ccb9f99b6db5fb2b21541e202/image.webp)
 
 ## Top 5 Trending Hugging Face Models
 
